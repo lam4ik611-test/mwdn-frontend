@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Image } from '../../types/image';
+import type { Image } from '../../types/image';
 import { PictureWrapper } from '../Common/PictureWrapper';
 import './Carousel.scss'
 
@@ -22,6 +22,7 @@ export const Carousel: React.FC<Props> = ({ images }) => {
     isDisabled,
   }) => (
     <button 
+      // TODO: in such cases it's better to use 'classnames' package
       className={`carousel__arrow carousel__arrow--${type} ${isDisabled ? 'carousel__arrow--disabled' : ''}`} 
       onClick={(): void => {
         if (isDisabled) return;
@@ -54,6 +55,7 @@ export const Carousel: React.FC<Props> = ({ images }) => {
         <div className="carousel__pagination">
           {images.map((_, index) => (
             <span 
+               // TODO: in such cases it's better to use 'classnames' package
               className={`carousel__pagination-item ${currentIndex === index ? 'carousel__pagination-item--active' : ''}`} 
               onClick={(): void => setCurrentIndex(index)}
             ></span>
