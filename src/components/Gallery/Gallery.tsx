@@ -9,7 +9,7 @@ interface Props {
 
 export const Gallery: React.FC<Props> = ({ images }) => (
   <ul className="gallery">
-    {images.map(({ id, title, url  }) => (
+    {images.map(({ id, title, url }) => (
       <li className="gallery__item" key={id}>
         <div className="gallery__card">
           <PictureWrapper
