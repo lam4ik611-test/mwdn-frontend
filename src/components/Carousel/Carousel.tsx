@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Image } from '../types/image';
+import { Image } from '../../types/image';
 import { PictureWrapper } from '../Common/PictureWrapper';
 import './Carousel.scss'
 

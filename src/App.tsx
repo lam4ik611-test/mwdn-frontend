@@ -2,9 +2,9 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import './App.css';
-import { Gallery } from './Gallery/Gallery';
+import { Gallery } from './components/Gallery/Gallery';
 import { Image } from './types/image';
-import { Carousel } from './Carousel/Carousel';
+import { Carousel } from './components/Carousel/Carousel';
 
 const apiUrl = 'http://localhost:3000/images';
 
